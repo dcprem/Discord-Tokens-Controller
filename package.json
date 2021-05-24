@@ -1,0 +1,20 @@
+{
+  "name": "discord-tokens-controller",
+  "version": "1.0.0",
+  "description": "A small script to update the status and pfp of your discord tokens",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "keywords": [
+    "discord",
+    "tokens",
+    "controller"
+  ],
+  "author": "MaXoooZ",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "discord.js": "^11.6.2"
+  }
+}
