@@ -12,7 +12,7 @@ async function execute() {
     let images = [];
 
     let page = Math.floor(Math.random() * 990) + 10;
-    let maxPage = page + 5;
+    let maxPage = page + 10;
 
     for (page; page < maxPage; page++) {
         let response = await axios.get(`https://avatars.alphacoders.com/by_category/3?page=${page}`);
@@ -33,7 +33,8 @@ async function execute() {
 			});
 
 			console.log(avatar);
-			client.user.setAvatar(avatar);
+			client.user.setAvatar(avatar); // if you do not want change avatar, delete this line 
+			// Besides, this line can lock the accounts if they are too young!
 		});
 
 		client.login(token);
